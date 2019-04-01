@@ -5,18 +5,19 @@ users between servers.
 # Prerequisites
 - python 3
 - pip
+- virtualenv
 
 # Install
-```pip install -r requirements.txt```
+```./install.sh```
 
 # Usage
 Put the text `creds = ["EMAIL", "PASSWORD"]` into `creds.py` replacing
 `EMAIL` and `PASSWORD` with your discord account's email and password
-respectively.  Run `python overlap.py` to get the data.  The output is
-stored in a csv file located at `out/users.csv`.
+respectively.  Run `. activate` followed by `python overlap.py` to fetch
+the data.  The output is stored in a csv file located at `out/users.csv`.
 
 # Output
-The output is in csv format in `out/users.csv`.  Example output:
+The output is in csv format in `out/users.csv`;  Example output:
 ```ID,Name,Expo Planning,Future Forwards
 419110059742040960,me,True,True
 807839291767816193,friend,True,True
